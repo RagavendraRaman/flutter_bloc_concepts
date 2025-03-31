@@ -38,9 +38,7 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
         BlocProvider<CounterCubit>(
-          create: (context) => CounterCubit(
-            internetCubit: context.read<InternetCubit>(),
-          ),
+          create: (context) => CounterCubit(),
         ),
       ],
       child: MaterialApp(
